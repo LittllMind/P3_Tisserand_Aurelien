@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "Ovink";
+    src: url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.eot");
+    /* IE9*/
+    src: url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.svg#Ovink W00 Medium") format("svg");
+    /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: "Ovink-SemiBold";
+    src: url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot");
+    /* IE9*/
+    src: url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.svg#Ovink W00 SemiBold") format("svg");
+    /* iOS 4.1- */
+}
+
+@import "libs/reset.scss";
+
+/* ====================== E N D   R E S E T ================= */
+
+
+/*      ./assets/sass/dart-sass/sass assets/sass/style.scss assets/css/style.css --watch */
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: #FFF;
+    font-family: sans-serif;
+}
+
+#page {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =============== H E A D E R =================== */
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    img {
+        text-align: center;
+        width: 40%;
+        height: auto;
+    }
+}
+
+
+/* =============== S E A R C H ==================== */
+
+.search {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    background-color: #EAEAEA;
+    .search-input {
+        display: flex;
+        padding-left: 28%;
+        width: 100%;
+        img {
+            width: 26px;
+        }
+        input {
+            height: 100%;
+            width: 100%;
+            align-self: center;
+            text-align: left;
+            font: 1.2em Calibri, Optima, Arial, sans-serif;
+            color: #353535;
+            background-color: #EAEAEA;
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+#funkystyling {}
+
+
+/* =============== E X P L O R E ================= */
+
+.explore {
+    height: 220px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+        width: 70%;
+        font: 1.5em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        width: 90%;
+        font: 1.2em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        margin-bottom: 20px;
+        color: #515151;
+    }
+    a {
+        height: 50px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        text-align: center;
+        border: thin solid #B862DB;
+        background-color: #B862DB;
+        color: #FFF;
+        border-radius: 35px 35px 35px 35px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* =============== O P E R A T I O N ============== */
+
+.operation {
+    height: 200px;
+    width: 100%;
+    background-color: #1818;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+        align-self: flex-start;
+        font: 1.5em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        padding-left: 4%;
+    }
+    .step {
+        display: flex;
+        align-items: center;
+        .step-number {
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #9356DC;
+            position: absolute;
+        }
+        .step-info {
+            height: 70px;
+            width: 90%;
+            display: flex;
+            background-color: #F6F6F6;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 10px 10px 10px 10px;
+        }
+    }
+}
+
+
+/* ================ R E S T A U R A N T ============ */
+
+.restaurant {
+    background-color: #F6F6F6;
+    .restaurant-figure {
+        img {}
+        .container {
+            display: flex;
+        }
+    }
+}
+
+
+/* ================ F O O T E R ==================== */
+
+footer {
+    background-color: #353535;
+}
+
+
+/* ======================== G R A F I K A R T =============================*/
+
+table {
+    width: 100%;
+    td {
+        border: thin solid black;
+    }
+    thead {
+        background: {
+            color: #000;
+            repeat: no-repeat;
+        }
+        color: #FFF;
+    }
+}
+
+%btn {
+    padding: 5px 12px;
+    background: rgb(99, 122, 255);
+}
+
+.btn {
+    @extend %btn;
+    color: #FFF;
+    &:hover {
+        background: rgb(7, 20, 90);
+    }
+    .theme-vert & {
+        background: green;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .btn {
+        padding: 10px;
+    }
+}
+
+.call-to-action {
+    @extend .btn;
+}
+
+.btn-danger {
+    @extend .btn;
+    background: #a97272;
+    &:hover {
+        background: red;
+    }
+}
+
+.card {
+    padding: 10px;
+}
+
+.card-action {
+    @extend .btn;
+}
+
+.card-cancel {
+    @extend .btn-danger;
+}
+
+.card-actions {
+    display: flex;
+}
