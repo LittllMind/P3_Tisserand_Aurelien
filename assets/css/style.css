@@ -1,17 +1,4 @@
-@font-face {
-  font-family: "Ovink";
-  src: url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.eot");
-  /* IE9*/
-  src: url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.eot?#iefix") format("embedded-opentype"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.woff2") format("woff2"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.woff") format("woff"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.ttf") format("truetype"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.svg#Ovink W00 Medium") format("svg");
-  /* iOS 4.1- */
-}
-@font-face {
-  font-family: "Ovink-SemiBold";
-  src: url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot");
-  /* IE9*/
-  src: url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot?#iefix") format("embedded-opentype"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff2") format("woff2"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff") format("woff"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.ttf") format("truetype"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.svg#Ovink W00 SemiBold") format("svg");
-  /* iOS 4.1- */
-}
+/*      ./assets/sass/dart-sass/sass assets/sass/style.scss assets/css/style.css --watch */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -91,7 +78,21 @@ th {
 }
 
 /* ====================== E N D   R E S E T ================= */
-/*      ./assets/sass/dart-sass/sass assets/sass/style.scss assets/css/style.css --watch */
+@font-face {
+  font-family: "Ovink";
+  src: url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.eot");
+  /* IE9*/
+  src: url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.eot?#iefix") format("embedded-opentype"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.woff2") format("woff2"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.woff") format("woff"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.ttf") format("truetype"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.svg#Ovink W00 Medium") format("svg");
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: "Ovink-SemiBold";
+  src: url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot");
+  /* IE9*/
+  src: url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot?#iefix") format("embedded-opentype"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff2") format("woff2"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff") format("woff"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.ttf") format("truetype"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.svg#Ovink W00 SemiBold") format("svg");
+  /* iOS 4.1- */
+}
+/* ====================== I N D E X =====================*/
 html {
   width: 100%;
 }
@@ -116,8 +117,7 @@ header {
 }
 header img {
   text-align: center;
-  width: 40%;
-  height: auto;
+  width: 50%;
 }
 
 /* =============== S E A R C H ==================== */
@@ -232,51 +232,27 @@ footer {
   background-color: #353535;
 }
 
-/* ======================== G R A F I K A R T =============================*/
-table {
-  width: 100%;
+/* ================================================= */
+/* ================= M E N U ======================= */
+/* ================================================= */
+.selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50px 50px 50px 50px;
+  height: auto;
+  /* ==========*/
 }
-table td {
-  border: thin solid black;
+.selection .selection-head {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
 }
-table thead {
-  background-color: #000;
-  background-repeat: no-repeat;
-  color: #FFF;
+.selection .selection-head h1 {
+  font: 1.5em "Ovink", Calibri, Optima, Arial, sans-serif;
 }
-
-.btn, .card-action, .btn-danger, .card-cancel, .call-to-action {
-  padding: 5px 12px;
-  background: #637aff;
-}
-
-.btn, .card-action, .btn-danger, .card-cancel, .call-to-action {
-  color: #FFF;
-}
-.btn:hover, .card-action:hover, .btn-danger:hover, .card-cancel:hover, .call-to-action:hover {
-  background: #07145a;
-}
-.theme-vert .btn, .theme-vert .card-action, .theme-vert .btn-danger, .theme-vert .card-cancel, .theme-vert .call-to-action {
-  background: green;
-}
-
-@media only screen and (max-width: 1200px) {
-  .btn, .card-action, .btn-danger, .card-cancel, .call-to-action {
-    padding: 10px;
-  }
-}
-.btn-danger, .card-cancel {
-  background: #a97272;
-}
-.btn-danger:hover, .card-cancel:hover {
-  background: red;
-}
-
-.card {
-  padding: 10px;
-}
-
-.card-actions {
+.selection .selection-part .starter .details {
   display: flex;
 }
 

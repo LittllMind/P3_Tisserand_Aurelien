@@ -1,64 +1,13 @@
-@font-face {
-    font-family: "Ovink";
-    src: url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.eot");
-    /* IE9*/
-    src: url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.woff2") format("woff2"), /* chrome、firefox */
-    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.woff") format("woff"), /* chrome、firefox */
-    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.svg#Ovink W00 Medium") format("svg");
-    /* iOS 4.1- */
-}
+/*      ./assets/sass/dart-sass/sass assets/sass/style.scss assets/css/style.css --watch */
 
-@font-face {
-    font-family: "Ovink-SemiBold";
-    src: url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot");
-    /* IE9*/
-    src: url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff2") format("woff2"), /* chrome、firefox */
-    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff") format("woff"), /* chrome、firefox */
-    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.svg#Ovink W00 SemiBold") format("svg");
-    /* iOS 4.1- */
-}
-
-@import "libs/reset.scss";
+@import "./utils/reset.scss";
 
 /* ====================== E N D   R E S E T ================= */
 
-
-/*      ./assets/sass/dart-sass/sass assets/sass/style.scss assets/css/style.css --watch */
-
-html {
-    width: 100%;
-}
-
-body {
-    width: 100%;
-    background-color: #FFF;
-    font-family: sans-serif;
-}
-
-#page {
-    width: 100%;
-    height: 100%;
-}
-
-
-/* =============== H E A D E R =================== */
-
-header {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    img {
-        text-align: center;
-        width: 40%;
-        height: auto;
-    }
-}
-
+@import "./bases/fonts";
+@import "./layouts/variables";
+@import "./pages/index";
+@import "./layouts/header";
 
 /* =============== S E A R C H ==================== */
 
@@ -88,8 +37,6 @@ header {
         }
     }
 }
-
-#funkystyling {}
 
 
 /* =============== E X P L O R E ================= */
@@ -187,68 +134,37 @@ footer {
 }
 
 
-/* ======================== G R A F I K A R T =============================*/
+/* ================================================= */
 
-table {
-    width: 100%;
-    td {
-        border: thin solid black;
-    }
-    thead {
-        background: {
-            color: #000;
-            repeat: no-repeat;
-        }
-        color: #FFF;
-    }
-}
 
-%btn {
-    padding: 5px 12px;
-    background: rgb(99, 122, 255);
-}
+/* ================= M E N U ======================= */
 
-.btn {
-    @extend %btn;
-    color: #FFF;
-    &:hover {
-        background: rgb(7, 20, 90);
-    }
-    .theme-vert & {
-        background: green;
-    }
-}
 
-@media only screen and (max-width: 1200px) {
-    .btn {
-        padding: 10px;
-    }
-}
+/* ================================================= */
 
-.call-to-action {
-    @extend .btn;
-}
-
-.btn-danger {
-    @extend .btn;
-    background: #a97272;
-    &:hover {
-        background: red;
-    }
-}
-
-.card {
-    padding: 10px;
-}
-
-.card-action {
-    @extend .btn;
-}
-
-.card-cancel {
-    @extend .btn-danger;
-}
-
-.card-actions {
+.selection {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px 50px 50px 50px;
+    height: auto;
+    .selection-head {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            font: 1.5em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        }
+        i {}
+    }
+    /* ==========*/
+    .selection-part {
+        h2 {}
+        .starter {
+            .details {
+                display: flex;
+            }
+        }
+    }
 }
