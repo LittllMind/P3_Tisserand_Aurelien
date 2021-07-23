@@ -6,11 +6,137 @@ html {
 
 body {
     width: 100%;
-    background-color: #FFF;
+    background-color: $background-primary;
     font-family: sans-serif;
 }
 
 #page {
     width: 100%;
     height: 100%;
+}
+
+
+/* =============== S E A R C H ==================== */
+
+.search {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    background-color: $background-secondary-heavy;
+    align-items: center;
+}
+
+.search-input {
+    display: flex;
+    padding-left: 28%;
+    width: 100%;
+    .location {
+        width: 26px;
+    }
+    .search {
+        height: 100%;
+        width: 100%;
+        align-self: center;
+        text-align: left;
+        background-color: $background-secondary-heavy;
+        font: 1.2em "Ovink", Calibri, Optima, Arial, sans-serif;
+        border: none;
+        outline: none;
+    }
+}
+
+
+/* =============== E X P L O R E ================= */
+
+.explore {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $background-secondary;
+    &-title {
+        width: 70%;
+        font: 1.5em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &-description {
+        width: 90%;
+        font: 1.2em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        color: #515151;
+        margin-bottom: 20px;
+    }
+    &-btn {
+        height: 50px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        text-align: center;
+        border: thin solid $buttons;
+        background-color: $buttons;
+        color: $background-primary;
+        border-radius: 35px 35px 35px 35px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* =============== O P E R A T I O N ============== */
+
+.operation {
+    height: auto;
+    width: 100%;
+    background-color: $background-primary;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    &-title {
+        align-self: flex-start;
+        font: 1.5em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        padding-left: 4%;
+    }
+}
+
+.operation-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    .step-number {
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: $buttons;
+        position: relative;
+        margin-right: 30px;
+    }
+    .step-info {
+        height: 70px;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        background-color: $background-secondary;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+
+
+/* ================ R E S T A U R A N T ============ */
+
+.restaurant {
+    background-color: #F6F6F6;
+    .restaurant-figure {
+        img {}
+        .container {
+            display: flex;
+        }
+    }
 }
