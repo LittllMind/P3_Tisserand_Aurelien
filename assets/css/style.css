@@ -92,6 +92,18 @@ th {
   src: url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot?#iefix") format("embedded-opentype"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff2") format("woff2"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff") format("woff"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.ttf") format("truetype"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.svg#Ovink W00 SemiBold") format("svg");
   /* iOS 4.1- */
 }
+/* =============== H E A D E R =================== */
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+header .logo {
+  text-align: center;
+  width: 50%;
+}
+
 /* ====================== I N D E X =====================*/
 html {
   width: 100%;
@@ -221,8 +233,10 @@ body {
 
 /* ================ R E S T A U R A N T ============ */
 .restaurant {
-  background-color: #1818;
-  /**/
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /**/
 }
 .restaurant-title {
@@ -232,7 +246,16 @@ body {
   padding-bottom: 20px;
   padding-left: 4%;
 }
-.restaurant-figure {
+
+.restaurant-card {
+  height: 300px;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.card-figure {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -240,29 +263,36 @@ body {
   overflow: hidden;
   width: 100%;
   height: 63%;
-  background-color: #F2F2F2;
   border-radius: 20px 20px 0 0;
-  box-shadow: 0 0 3px #E5E5E5;
-  border: 5px solid #FFFFFF;
   box-shadow: 0.6em 0 0.8em rgba(168, 164, 141, 0.2);
   align-items: center;
   /**/
 }
-/* =============== H E A D E R =================== */
-header {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  margin-bottom: 20px;
-}
-header img {
-  text-align: center;
-  width: 50%;
+.card-figure-image {
+  display: block;
+  align-self: center;
+  width: 100%;
+  position: relative;
 }
 
-/* ================ F O O T E R ==================== */
+.card-content {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  height: 30%;
+  background-color: #FFFFFF;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0.1em 0 0.7em rgba(168, 164, 141, 0.2);
+}
+.card-content-icon {
+  align-self: center;
+}
+
 footer {
   background-color: #353535;
+  color: #FFFFFF;
 }
 
 /* ================================================= */

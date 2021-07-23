@@ -6,15 +6,9 @@
 
 @import "./utils/variables";
 @import "./bases/fonts";
-@import "./pages/index";
 @import "./layouts/header";
-
-/* ================ F O O T E R ==================== */
-
-footer {
-    background-color: #353535;
-}
-
+@import "./pages/index";
+@import "./layouts/footer";
 
 /* ================================================= */
 

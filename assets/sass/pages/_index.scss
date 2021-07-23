@@ -136,7 +136,10 @@ body {
 /* ================ R E S T A U R A N T ============ */
 
 .restaurant {
-    background-color: $test;
+    background-color: $background-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /**/
     &-title {
         align-self: flex-start;
@@ -145,11 +148,17 @@ body {
         padding-bottom: 20px;
         padding-left: 4%;
     }
-    /**/
-    &-figure {}
 }
 
-.restaurant-figure {
+.restaurant-card {
+    height: 300px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.card-figure {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -157,12 +166,29 @@ body {
     overflow: hidden;
     width: 100%;
     height: 63%;
-    background-color: #F2F2F2;
     border-radius: 20px 20px 0 0;
-    box-shadow: 0 0 3px #E5E5E5;
-    border: 5px solid #FFFFFF;
     box-shadow: 0.6em 0 .8em rgba(168, 164, 141, 0.2);
     align-items: center;
     /**/
-    &-image {}
+    &-image {
+        display: block;
+        align-self: center;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.card-content {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    height: 30%;
+    background-color: $background-primary;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0.1em 0 .7em rgba(168, 164, 141, 0.2);
+    &-icon {
+        align-self: center;
+    }
 }
