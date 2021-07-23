@@ -1,4 +1,7 @@
 footer {
     background-color: $primary-dark;
-    color: $background-primary
+    color: $background-primary;
+    &-logo {
+        width: 50%;
+    }
 }
