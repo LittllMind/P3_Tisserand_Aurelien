@@ -8,39 +8,5 @@
 @import "./bases/fonts";
 @import "./layouts/header";
 @import "./pages/index";
+@import "./pages/menu";
 @import "./layouts/footer";
-
-/* ================================================= */
-
-
-/* ================= M E N U ======================= */
-
-
-/* ================================================= */
-
-.selection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 50px 50px 50px 50px;
-    height: auto;
-    .selection-head {
-        display: flex;
-        width: 90%;
-        justify-content: space-between;
-        align-items: center;
-        h1 {
-            font: 1.5em 'Ovink', Calibri, Optima, Arial, sans-serif;
-        }
-        i {}
-    }
-    /* ==========*/
-    .selection-part {
-        h2 {}
-        .starter {
-            .details {
-                display: flex;
-            }
-        }
-    }
-}

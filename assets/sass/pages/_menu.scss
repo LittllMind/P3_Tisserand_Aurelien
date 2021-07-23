@@ -1,0 +1,46 @@
+/* ================= M E N U ======================= */
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px 50px 50px 50px;
+    height: auto;
+    background-color: $background-secondary;
+    .selection-head {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        /**/
+        &-title {
+            font: $ovink;
+            font-size: 1.5em;
+            padding-top: 5%;
+        }
+        /**/
+        &-icon {
+            padding-top: 5%;
+        }
+    }
+    /**/
+    &-starter {}
+    &-title {}
+}
+
+.starter {
+    background-color: $background-primary;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 16px;
+    /**/
+    &-title {
+        padding-top: 5%;
+        font: $ovink;
+    }
+    &-details {
+        display: flex;
+        justify-content: space-between;
+        font: $ovink;
+    }
+}

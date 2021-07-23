@@ -80,17 +80,13 @@ th {
 /* ====================== E N D   R E S E T ================= */
 @font-face {
   font-family: "Ovink";
-  src: url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.eot");
-  /* IE9*/
-  src: url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.eot?#iefix") format("embedded-opentype"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.woff2") format("woff2"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.woff") format("woff"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.ttf") format("truetype"), url("../fonts/Ovink W00 Medium/33f1a2305633401f3215aa8c82874cf7.svg#Ovink W00 Medium") format("svg");
-  /* iOS 4.1- */
+  src: url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.eot");
+  src: url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.woff") format("woff"), url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.svg#Ovink") format("svg");
 }
 @font-face {
-  font-family: "Ovink-SemiBold";
-  src: url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot");
-  /* IE9*/
-  src: url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot?#iefix") format("embedded-opentype"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff2") format("woff2"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff") format("woff"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.ttf") format("truetype"), url("../fonts/Ovink W00 SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.svg#Ovink W00 SemiBold") format("svg");
-  /* iOS 4.1- */
+  font-family: "Ovink-SB";
+  src: url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.eot");
+  src: url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.woff") format("woff"), url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.svg#Ovink") format("svg");
 }
 /* =============== H E A D E R =================== */
 header {
@@ -143,7 +139,7 @@ body {
   align-self: center;
   text-align: left;
   background-color: #EAEAEA;
-  font: 1.2em "Ovink", Calibri, Optima, Arial, sans-serif;
+  font: "Ovink", Calibri, Optima, Arial, sans-serif;
   border: none;
   outline: none;
 }
@@ -163,13 +159,13 @@ body {
 }
 .explore-title {
   width: 70%;
-  font: 1.5em "Ovink", Calibri, Optima, Arial, sans-serif;
+  font: "Ovink", Calibri, Optima, Arial, sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .explore-description {
   width: 90%;
-  font: 1.2em "Ovink", Calibri, Optima, Arial, sans-serif;
+  font: "Ovink", Calibri, Optima, Arial, sans-serif;
   color: #515151;
   margin-bottom: 20px;
 }
@@ -199,7 +195,7 @@ body {
 }
 .operation-title {
   align-self: flex-start;
-  font: 1.5em "Ovink", Calibri, Optima, Arial, sans-serif;
+  font: "Ovink", Calibri, Optima, Arial, sans-serif;
   padding-top: 25px;
   padding-bottom: 20px;
   padding-left: 4%;
@@ -241,7 +237,7 @@ body {
 }
 .restaurant-title {
   align-self: flex-start;
-  font: 1.5em "Ovink", Calibri, Optima, Arial, sans-serif;
+  font: "Ovink", Calibri, Optima, Arial, sans-serif;
   padding-top: 25px;
   padding-bottom: 20px;
   padding-left: 4%;
@@ -290,36 +286,55 @@ body {
   align-self: center;
 }
 
-footer {
-  background-color: #353535;
-  color: #FFFFFF;
-}
-footer-logo {
-  width: 50%;
-}
-
-/* ================================================= */
 /* ================= M E N U ======================= */
-/* ================================================= */
 .selection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 50px 50px 50px 50px;
   height: auto;
-  /* ==========*/
+  background-color: #F6F6F6;
+  /**/
 }
 .selection .selection-head {
   display: flex;
   width: 90%;
   justify-content: space-between;
   align-items: center;
+  /**/
+  /**/
 }
-.selection .selection-head h1 {
-  font: 1.5em "Ovink", Calibri, Optima, Arial, sans-serif;
+.selection .selection-head-title {
+  font: "Ovink", Calibri, Optima, Arial, sans-serif;
+  font-size: 1.5em;
+  padding-top: 5%;
 }
-.selection .selection-part .starter .details {
+.selection .selection-head-icon {
+  padding-top: 5%;
+}
+.starter {
+  background-color: #FFFFFF;
+  margin: 5%;
+  padding: 3%;
+  border-radius: 16px;
+  /**/
+}
+.starter-title {
+  padding-top: 5%;
+  font: "Ovink", Calibri, Optima, Arial, sans-serif;
+}
+.starter-details {
   display: flex;
+  justify-content: space-between;
+  font: "Ovink", Calibri, Optima, Arial, sans-serif;
+}
+
+footer {
+  background-color: #353535;
+  color: #FFFFFF;
+}
+footer-logo {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

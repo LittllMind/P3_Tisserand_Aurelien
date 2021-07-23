@@ -1,23 +1,22 @@
 @font-face {
     font-family: "Ovink";
-    src: url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.eot");
-    /* IE9*/
-    src: url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.woff2") format("woff2"), /* chrome、firefox */
-    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.woff") format("woff"), /* chrome、firefox */
-    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("../fonts/Ovink\ W00\ Medium/33f1a2305633401f3215aa8c82874cf7.svg#Ovink W00 Medium") format("svg");
-    /* iOS 4.1- */
+    src: url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.eot");
+    src: url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.woff") format("woff"), url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.svg#Ovink") format("svg");
 }
 
 @font-face {
-    font-family: "Ovink-SemiBold";
-    src: url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot");
-    /* IE9*/
-    src: url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff2") format("woff2"), /* chrome、firefox */
-    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.woff") format("woff"), /* chrome、firefox */
-    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("../fonts/Ovink\ W00\ SemiBold/2a4f94673512e9a6ec0ba5e7efc35314.svg#Ovink W00 SemiBold") format("svg");
-    /* iOS 4.1- */
+    font-family: "Ovink-SB";
+    src: url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.eot");
+    src: url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.woff") format("woff"), url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2a4f94673512e9a6ec0ba5e7efc35314.svg#Ovink") format("svg");
 }
+
+$ovink: 'Ovink',
+Calibri,
+Optima,
+Arial,
+sans-serif;
+$ovink-SB: 'Ovink',
+Calibri,
+Optima,
+Arial,
+sans-serif;

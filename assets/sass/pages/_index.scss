@@ -39,7 +39,7 @@ body {
         align-self: center;
         text-align: left;
         background-color: $background-secondary-heavy;
-        font: 1.2em "Ovink", Calibri, Optima, Arial, sans-serif;
+        font: $ovink;
         border: none;
         outline: none;
     }
@@ -59,14 +59,14 @@ body {
     /**/
     &-title {
         width: 70%;
-        font: 1.5em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        font: $ovink;
         margin-top: 20px;
         margin-bottom: 20px;
     }
     /**/
     &-description {
         width: 90%;
-        font: 1.2em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        font: $ovink;
         color: #515151;
         margin-bottom: 20px;
     }
@@ -99,7 +99,7 @@ body {
     /**/
     &-title {
         align-self: flex-start;
-        font: 1.5em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        font: $ovink;
         padding-top: 25px;
         padding-bottom: 20px;
         padding-left: 4%;
@@ -143,7 +143,7 @@ body {
     /**/
     &-title {
         align-self: flex-start;
-        font: 1.5em 'Ovink', Calibri, Optima, Arial, sans-serif;
+        font: $ovink;
         padding-top: 25px;
         padding-bottom: 20px;
         padding-left: 4%;
