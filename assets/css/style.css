@@ -312,18 +312,18 @@ body {
 .selection .selection-head-icon {
   padding-top: 5%;
 }
-.starter {
+.dish {
   background-color: #FFFFFF;
   margin: 5%;
   padding: 3%;
   border-radius: 16px;
   /**/
 }
-.starter-title {
+.dish-title {
   padding-top: 5%;
   font: "Ovink", Calibri, Optima, Arial, sans-serif;
 }
-.starter-details {
+.dish-details {
   display: flex;
   justify-content: space-between;
   font: "Ovink", Calibri, Optima, Arial, sans-serif;
