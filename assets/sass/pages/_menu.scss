@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 0 0;
     height: auto;
     background-color: $background-secondary;
     .selection-head {
@@ -12,20 +12,35 @@
         width: 90%;
         justify-content: space-between;
         align-items: center;
+        margin-top: 20px;
+        padding-bottom: 5%;
         /**/
         &-title {
             font: $ovink;
             font-size: 1.5em;
-            padding-top: 5%;
+            margin-left: 10%;
         }
         /**/
         &-icon {
-            padding-top: 5%;
+            margin-right: 5%;
         }
     }
     /**/
-    &-starter {}
-    &-title {}
+    &-title {
+        margin-left: 6%;
+    }
+    &-underline {
+        margin-top: 1%;
+        margin-left: 6%;
+        max-width: 10%;
+        min-height: 3px;
+        background-color: $underline;
+    }
+    &-btn {
+        @include button;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
 }
 
 .dish {
@@ -33,6 +48,9 @@
     margin: 5%;
     padding: 3%;
     border-radius: 16px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
     /**/
     &-title {
         padding-top: 5%;
@@ -42,5 +60,8 @@
         display: flex;
         justify-content: space-between;
         font: $ovink;
+    }
+    &:hover {
+        transform: scale(1.15);
     }
 }

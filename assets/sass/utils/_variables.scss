@@ -3,4 +3,26 @@ $background-secondary: #F6F6F6;
 $background-secondary-heavy: #EAEAEA;
 $primary-dark: #353535;
 $buttons: #B862DB;
+$underline: #99E2D0;
 $test: #1818;
+
+/*=============================== B O X S ==================================*/
+
+$rounded-border: 10px 10px 10px 10px;
+$box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+
+/*=============================== M I X I N S ==================================*/
+
+@mixin button {
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    border: thin solid $buttons;
+    background-color: $buttons;
+    color: $background-primary;
+    border-radius: 35px 35px 35px 35px;
+    margin-bottom: 30px;
+}

@@ -78,6 +78,8 @@ th {
 }
 
 /* ====================== E N D   R E S E T ================= */
+/*=============================== B O X S ==================================*/
+/*=============================== M I X I N S ==================================*/
 @font-face {
   font-family: "Ovink";
   src: url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.eot");
@@ -200,6 +202,11 @@ body {
   padding-bottom: 20px;
   padding-left: 4%;
 }
+.operation-icon {
+  max-width: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
 
 .operation-step {
   display: flex;
@@ -207,16 +214,8 @@ body {
   align-items: center;
   padding-bottom: 20px;
 }
-.operation-step .step-number {
-  height: 20px;
-  width: 20px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: #B862DB;
+.step-info {
   position: relative;
-  margin-right: 30px;
-}
-.operation-step .step-info {
   height: 70px;
   width: 90%;
   text-align: center;
@@ -225,6 +224,26 @@ body {
   background-color: #F6F6F6;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
   border-radius: 10px 10px 10px 10px;
+}
+.step-info-number {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #B862DB;
+  margin-right: 300px;
+  /**/
+  background-color: #DEEBFF;
+  border: thin solid #DEEBFF;
+  margin: auto;
+  display: flex;
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  z-index: 1;
+  color: #0065FC;
+  position: absolute;
 }
 
 /* ================ R E S T A U R A N T ============ */
@@ -249,6 +268,8 @@ body {
   padding-left: 5%;
   padding-top: 1%;
   padding-bottom: 1%;
+  text-decoration: none;
+  color: black;
 }
 
 .card-figure {
@@ -291,7 +312,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px 50px 0 0;
   height: auto;
   background-color: #F6F6F6;
   /**/
@@ -301,22 +322,53 @@ body {
   width: 90%;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+  padding-bottom: 5%;
   /**/
   /**/
 }
 .selection .selection-head-title {
   font: "Ovink", Calibri, Optima, Arial, sans-serif;
   font-size: 1.5em;
-  padding-top: 5%;
+  margin-left: 10%;
 }
 .selection .selection-head-icon {
-  padding-top: 5%;
+  margin-right: 5%;
 }
+.selection-title {
+  margin-left: 6%;
+}
+.selection-underline {
+  margin-top: 1%;
+  margin-left: 6%;
+  max-width: 10%;
+  min-height: 3px;
+  background-color: #99E2D0;
+}
+.selection-btn {
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  border: thin solid #B862DB;
+  background-color: #B862DB;
+  color: #FFFFFF;
+  border-radius: 35px 35px 35px 35px;
+  margin-bottom: 30px;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
 .dish {
   background-color: #FFFFFF;
   margin: 5%;
   padding: 3%;
   border-radius: 16px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
   /**/
 }
 .dish-title {
@@ -327,6 +379,9 @@ body {
   display: flex;
   justify-content: space-between;
   font: "Ovink", Calibri, Optima, Arial, sans-serif;
+}
+.dish:hover {
+  transform: scale(1.15);
 }
 
 footer {

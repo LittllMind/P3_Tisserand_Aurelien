@@ -72,17 +72,7 @@ body {
     }
     /**/
     &-btn {
-        height: 50px;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        text-align: center;
-        border: thin solid $buttons;
-        background-color: $buttons;
-        color: $background-primary;
-        border-radius: 35px 35px 35px 35px;
-        margin-bottom: 30px;
+        @include button;
     }
 }
 
@@ -104,6 +94,11 @@ body {
         padding-bottom: 20px;
         padding-left: 4%;
     }
+    &-icon {
+        max-width: 5%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
 }
 
 .operation-step {
@@ -111,24 +106,38 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    .step-number {
+    .step-number {}
+}
+
+.step-info {
+    position: relative;
+    height: 70px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: $background-secondary;
+    box-shadow: $box-shadow;
+    border-radius: $rounded-border;
+    &-number {
+        position: absolute;
         height: 20px;
         width: 20px;
         text-align: center;
         border-radius: 50%;
         background-color: $buttons;
-        position: relative;
-        margin-right: 30px;
-    }
-    .step-info {
-        height: 70px;
-        width: 90%;
-        text-align: center;
+        margin-right: 300px;
+        /**/
+        background-color: #DEEBFF;
+        border: thin solid #DEEBFF;
+        margin: auto;
         display: flex;
-        align-items: center;
-        background-color: $background-secondary;
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-        border-radius: 10px 10px 10px 10px;
+        border-radius: 50%;
+        width: 53px;
+        height: 53px;
+        z-index: 1;
+        color: #0065FC;
+        position: absolute;
     }
 }
 
@@ -156,6 +165,8 @@ body {
     padding-left: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
+    text-decoration: none;
+    color: black;
 }
 
 .card-figure {
