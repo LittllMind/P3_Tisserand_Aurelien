@@ -3,13 +3,16 @@ $background-secondary: #F6F6F6;
 $background-secondary-heavy: #EAEAEA;
 $primary-dark: #353535;
 $buttons: #B862DB;
+$operation-number-color: #9356DC;
+$step-info-hover: #F5EDFF;
 $underline: #99E2D0;
+$font-light: #F4EFFB;
 $test: #1818;
 
 /*=============================== B O X S ==================================*/
 
 $rounded-border: 20px 20px 20px 20px;
-$box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+$box-shadow: 0px 3px 5px rgba(0, 0, 0.5, 0.5);
 
 /*=============================== M I X I N S ==================================*/
 
@@ -22,7 +25,17 @@ $box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
     border: thin solid $buttons;
     background-color: $buttons;
+    box-shadow: $box-shadow;
     color: $background-primary;
     border-radius: 35px 35px 35px 35px;
-    margin-bottom: 30px;
+}
+
+@mixin index-title {
+    align-self: flex-start;
+    font-family: $shrikhand;
+    font-size: 1.9em;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 4%;
 }

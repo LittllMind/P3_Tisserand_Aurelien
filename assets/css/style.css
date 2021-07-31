@@ -141,6 +141,7 @@ body {
   display: flex;
   padding-left: 28%;
   width: 100%;
+  align-items: center;
 }
 .search-input .location {
   width: 26px;
@@ -149,14 +150,16 @@ body {
   height: 100%;
   width: 100%;
   background-color: #EAEAEA;
-  font: "Ovink", Calibri, Optima, Arial, sans-serif;
+  font-family: "Ovink", Calibri, Optima, Arial, sans-serif;
+  font-size: 1em;
+  color: #404040;
   border: none;
   outline: none;
 }
 
 /* =============== E X P L O R E ================= */
 .explore {
-  height: 220px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,13 +172,16 @@ body {
 }
 .explore-title {
   width: 70%;
-  margin-top: 20px;
+  margin-top: 12%;
   margin-bottom: 20px;
   font-family: "Ovink", Calibri, Optima, Arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 .explore-description {
   width: 90%;
-  font-family: "Ovink", Calibri, Optima, Arial, sans-serif;
+  font-family: "shrikhand", Calibri, Optima, Arial, sans-serif;
+  font-size: 1.2em;
   color: #515151;
   margin-bottom: 20px;
 }
@@ -188,9 +194,11 @@ body {
   text-align: center;
   border: thin solid #B862DB;
   background-color: #B862DB;
+  box-shadow: 0px 3px 5px rgba(0, 0, 1, 0.5);
   color: #FFFFFF;
   border-radius: 35px 35px 35px 35px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 /* =============== O P E R A T I O N ============== */
@@ -205,7 +213,9 @@ body {
 }
 .operation-title {
   align-self: flex-start;
-  font-family: "Ovink", Calibri, Optima, Arial, sans-serif;
+  font-family: "shrikhand", Calibri, Optima, Arial, sans-serif;
+  font-size: 1.9em;
+  font-weight: bold;
   padding-top: 25px;
   padding-bottom: 20px;
   padding-left: 4%;
@@ -214,6 +224,9 @@ body {
   max-width: 5%;
   margin-left: 10%;
   margin-right: 6%;
+}
+.operation-icon:hover {
+  color: #9356DC;
 }
 
 .operation-step {
@@ -231,18 +244,31 @@ body {
   display: flex;
   align-items: center;
   background-color: #F6F6F6;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px rgba(0, 0, 1, 0.5);
   border-radius: 20px 20px 20px 20px;
+  /**/
+  /**/
   /**/
 }
 .step-info-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F4EFFB;
+  font-size: 0.8em;
   position: absolute;
-  left: -10px;
-  height: 20px;
-  width: 20px;
+  left: -11px;
+  height: 22px;
+  width: 22px;
   text-align: center;
   border-radius: 50%;
-  background-color: #B862DB;
+  background-color: #9356DC;
+}
+.step-info-content {
+  font-family: "Ovink", Calibri, Optima, Arial, sans-serif;
+}
+.step-info:hover {
+  background-color: #F5EDFF;
 }
 
 /* ================ R E S T A U R A N T ============ */
@@ -255,7 +281,9 @@ body {
 }
 .restaurant-title {
   align-self: flex-start;
-  font: "Ovink", Calibri, Optima, Arial, sans-serif;
+  font-family: "shrikhand", Calibri, Optima, Arial, sans-serif;
+  font-size: 1.9em;
+  font-weight: bold;
   padding-top: 25px;
   padding-bottom: 20px;
   padding-left: 4%;
@@ -353,9 +381,9 @@ body {
   text-align: center;
   border: thin solid #B862DB;
   background-color: #B862DB;
+  box-shadow: 0px 3px 5px rgba(0, 0, 1, 0.5);
   color: #FFFFFF;
   border-radius: 35px 35px 35px 35px;
-  margin-bottom: 30px;
   margin-right: 25%;
   margin-left: 25%;
 }

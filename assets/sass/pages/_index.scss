@@ -30,6 +30,7 @@ body {
     display: flex;
     padding-left: 28%;
     width: 100%;
+    align-items: center;
     .location {
         width: 26px;
     }
@@ -37,7 +38,9 @@ body {
         height: 100%;
         width: 100%;
         background-color: $background-secondary-heavy;
-        font: $ovink;
+        font-family: $ovink;
+        font-size: 1em;
+        color: #404040;
         border: none;
         outline: none;
     }
@@ -47,7 +50,7 @@ body {
 /* =============== E X P L O R E ================= */
 
 .explore {
-    height: 220px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,20 +60,25 @@ body {
     /**/
     &-title {
         width: 70%;
-        margin-top: 20px;
+        margin-top: 12%;
         margin-bottom: 20px;
         font-family: $ovink-SB;
+        font-size: 1.6em;
+        font-weight: bold;
     }
     /**/
     &-description {
         width: 90%;
-        font-family: $ovink;
+        font-family: $shrikhand;
+        font-size: 1.2em;
         color: #515151;
         margin-bottom: 20px;
     }
     /**/
     &-btn {
         @include button;
+        margin-bottom: 50px;
+        margin-top: 25px;
     }
 }
 
@@ -86,16 +94,15 @@ body {
     padding-bottom: 50px;
     /**/
     &-title {
-        align-self: flex-start;
-        font-family: $ovink;
-        padding-top: 25px;
-        padding-bottom: 20px;
-        padding-left: 4%;
+        @include index-title;
     }
     &-icon {
         max-width: 5%;
         margin-left: 10%;
         margin-right: 6%;
+        &:hover {
+            color: $operation-number-color;
+        }
     }
 }
 
@@ -118,13 +125,26 @@ body {
     border-radius: $rounded-border;
     /**/
     &-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $font-light;
+        font-size: .8em;
         position: absolute;
-        left: -10px;
-        height: 20px;
-        width: 20px;
+        left: -11px;
+        height: 22px;
+        width: 22px;
         text-align: center;
         border-radius: 50%;
-        background-color: $buttons;
+        background-color: $operation-number-color;
+    }
+    /**/
+    &-content {
+        font-family: $ovink-SB;
+    }
+    /**/
+    &:hover {
+        background-color: $step-info-hover;
     }
 }
 
@@ -138,11 +158,7 @@ body {
     align-items: center;
     /**/
     &-title {
-        align-self: flex-start;
-        font: $ovink;
-        padding-top: 25px;
-        padding-bottom: 20px;
-        padding-left: 4%;
+        @include index-title;
     }
 }
 
