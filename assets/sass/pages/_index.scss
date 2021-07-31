@@ -36,8 +36,6 @@ body {
     .search {
         height: 100%;
         width: 100%;
-        align-self: center;
-        text-align: left;
         background-color: $background-secondary-heavy;
         font: $ovink;
         border: none;
@@ -59,14 +57,14 @@ body {
     /**/
     &-title {
         width: 70%;
-        font: $ovink;
         margin-top: 20px;
         margin-bottom: 20px;
+        font-family: $ovink-SB;
     }
     /**/
     &-description {
         width: 90%;
-        font: $ovink;
+        font-family: $ovink;
         color: #515151;
         margin-bottom: 20px;
     }
@@ -89,15 +87,15 @@ body {
     /**/
     &-title {
         align-self: flex-start;
-        font: $ovink;
+        font-family: $ovink;
         padding-top: 25px;
         padding-bottom: 20px;
         padding-left: 4%;
     }
     &-icon {
         max-width: 5%;
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 10%;
+        margin-right: 6%;
     }
 }
 
@@ -106,7 +104,6 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    .step-number {}
 }
 
 .step-info {
@@ -119,25 +116,15 @@ body {
     background-color: $background-secondary;
     box-shadow: $box-shadow;
     border-radius: $rounded-border;
+    /**/
     &-number {
         position: absolute;
+        left: -10px;
         height: 20px;
         width: 20px;
         text-align: center;
         border-radius: 50%;
         background-color: $buttons;
-        margin-right: 300px;
-        /**/
-        background-color: #DEEBFF;
-        border: thin solid #DEEBFF;
-        margin: auto;
-        display: flex;
-        border-radius: 50%;
-        width: 53px;
-        height: 53px;
-        z-index: 1;
-        color: #0065FC;
-        position: absolute;
     }
 }
 
