@@ -308,7 +308,7 @@ body {
   width: 100%;
   height: 63%;
   border-radius: 20px 20px 0 0;
-  box-shadow: 0.6em 0 0.8em rgba(168, 164, 141, 0.2);
+  box-shadow: 0px 3px 5px rgba(0, 0, 1, 0.5);
   align-items: center;
   /**/
 }
@@ -319,19 +319,48 @@ body {
   position: relative;
 }
 
+.card {
+  /**/
+  /**/
+}
 .card-content {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
   text-align: left;
   width: 100%;
   height: 30%;
   background-color: #FFFFFF;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0.1em 0 0.7em rgba(168, 164, 141, 0.2);
+  box-shadow: 0px 3px 5px rgba(0, 0, 1, 0.5);
+  /**/
 }
-.card-content-icon {
+.card-content-info {
+  padding-left: 4%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /**/
+  /**/
+}
+.card-content-info-title {
+  font-family: "Ovink", Calibri, Optima, Arial, sans-serif;
+  font-size: 1.1em;
+  padding-bottom: 3%;
+}
+.card-content-info-location {
+  font-family: "Ovink", Calibri, Optima, Arial, sans-serif;
+}
+.card-icon {
   align-self: center;
+  font-size: 3em;
+  padding-right: 5%;
+  cursor: pointer;
+}
+.card-icon:hover {
+  color: #B862DB;
+  font-weight: 900;
 }
 
 /* ================= M E N U ======================= */
@@ -411,12 +440,40 @@ body {
   transform: scale(1.15);
 }
 
-footer {
+.footer {
   background-color: #353535;
   color: #FFFFFF;
+  padding-bottom: 10%;
+  /**/
+  /**/
+  /**/
+  /**/
 }
-footer-logo {
-  width: 50%;
+.footer-logo {
+  width: 28%;
+  margin: 6% 0 2% 4%;
+  color: wheat;
+}
+.footer-propose {
+  margin: 2% 0 2% 0;
+  display: flex;
+  /**/
+}
+.footer-propose-icon {
+  margin: 0 3% 0 3%;
+}
+.footer-become-popular {
+  display: flex;
+  /**/
+}
+.footer-become-popular-icon {
+  margin: 0 3% 0 3%;
+}
+.footer-legal {
+  margin: 2% 0 2% 3%;
+}
+.footer-contact {
+  margin: 2% 0 2% 3%;
 }
 
 /*# sourceMappingURL=style.css.map */

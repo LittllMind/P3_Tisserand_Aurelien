@@ -1,7 +1,35 @@
-footer {
+.footer {
     background-color: $primary-dark;
     color: $background-primary;
+    padding-bottom: 10%;
     &-logo {
-        width: 50%;
+        width: 28%;
+        margin: 6% 0 2% 4%;
+        color: wheat;
+    }
+    /**/
+    &-propose {
+        margin: 2% 0 2% 0;
+        display: flex;
+        /**/
+        &-icon {
+            margin: 0 3% 0 3%;
+        }
+    }
+    /**/
+    &-become-popular {
+        display: flex;
+        /**/
+        &-icon {
+            margin: 0 3% 0 3%;
+        }
+    }
+    /**/
+    &-legal {
+        margin: 2% 0 2% 3%;
+    }
+    /**/
+    &-contact {
+        margin: 2% 0 2% 3%;
     }
 }
