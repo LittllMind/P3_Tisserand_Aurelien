@@ -125,12 +125,12 @@ body {
     border-radius: $rounded-border;
     /**/
     &-number {
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         color: $font-light;
         font-size: .8em;
-        position: absolute;
         left: -11px;
         height: 22px;
         width: 22px;
