@@ -78,8 +78,11 @@ th {
 }
 
 /* ====================== E N D   R E S E T ================= */
+/*refacto nom couleurs*/
 /*=============================== B O X S ==================================*/
 /*=============================== M I X I N S ==================================*/
+/* type de boutton ? (validation/recherche..etc)*/
+/* Et une fonction ?? */
 @font-face {
   font-family: "Ovink";
   src: url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.eot");
@@ -101,6 +104,7 @@ th {
 /**/
 /**/
 /* =============== H E A D E R =================== */
+/*pas de nom de tag*/
 header {
   display: flex;
   justify-content: center;
@@ -157,6 +161,7 @@ body {
   outline: none;
 }
 
+/* pas d'inception de classes !*/
 /* =============== E X P L O R E ================= */
 .explore {
   height: auto;
@@ -183,6 +188,7 @@ body {
   font-family: "shrikhand", Calibri, Optima, Arial, sans-serif;
   font-size: 1.2em;
   color: #515151;
+  /*couleur en variable !*/
   margin-bottom: 20px;
 }
 .explore-btn {
@@ -463,6 +469,7 @@ body {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  transition: transform 500ms ease-in-out;
 }
 
 .dish {
@@ -483,10 +490,11 @@ body {
   padding: 4%;
   width: 100%;
   height: 100%;
-  transition: width 1000ms, border-radius 400ms;
   transition-duration: 1000ms;
+  transition-property: transform;
 }
 .dish-infos:hover {
+  transform: scaleX(0.8);
   border-radius: 16px 0 0 16px;
 }
 .dish-infos:hover + .dish-validate {
@@ -497,6 +505,10 @@ body {
   align-items: center;
   width: 25%;
 }
+.dish-infos:hover + .dish-validate-check {
+  transform: rotate(-360deg);
+}
+
 /***************************************************************/
 .transition {
   padding-top: 1300px;
@@ -538,6 +550,7 @@ body {
   margin: 2% 0 2% 3%;
 }
 
+/*  trop de niveaux*/
 .transition {
   height: 200px;
   width: 100%;

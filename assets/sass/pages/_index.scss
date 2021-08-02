@@ -47,6 +47,9 @@ body {
 }
 
 
+/* pas d'inception de classes !*/
+
+
 /* =============== E X P L O R E ================= */
 
 .explore {
@@ -72,6 +75,7 @@ body {
         font-family: $shrikhand;
         font-size: 1.2em;
         color: #515151;
+        /*couleur en variable !*/
         margin-bottom: 20px;
     }
     /**/
