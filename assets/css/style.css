@@ -104,14 +104,13 @@ th {
 /**/
 /**/
 /* =============== H E A D E R =================== */
-/*pas de nom de tag*/
-header {
+.header {
   display: flex;
   justify-content: center;
   padding-top: 20px;
   margin-bottom: 20px;
 }
-header .logo {
+.header .logo {
   text-align: center;
   width: 50%;
 }
@@ -432,7 +431,19 @@ body {
 }
 
 .dish {
-  /**/
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari et Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  cursor: pointer;
+  margin: 4%;
   /**/
   /**/
   /**/
@@ -450,11 +461,34 @@ body {
 .dish-price {
   font-weight: bold;
 }
+
+.dish-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 4%;
+  width: 100%;
+  height: 100%;
+  /**/
+  transition-duration: 1000ms;
+  transform: scale(1);
+}
+.dish-infos:hover {
+  transform: scale(1);
+  border-radius: 16px 0 0 16px;
+}
+
 .dish-validate {
   width: 0px;
   height: 100%;
   background-color: #8EDEC9;
   visibility: hidden;
+  /*transition-duration: 1000ms;
+  transform: scale(1);*/
+  transition-duration: 1000ms;
+  transform: rotate(0deg);
   /**/
 }
 .dish-validate-check {
@@ -469,35 +503,13 @@ body {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  transition: transform 500ms ease-in-out;
+  /**/
+  transition-duration: 1000ms;
+  transform: rotate(0deg);
 }
 
-.dish {
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  cursor: pointer;
-  margin: 4%;
-  /**/
-}
-.dish-infos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 16px;
-  padding: 4%;
-  width: 100%;
-  height: 100%;
-  transition-duration: 1000ms;
-  transition-property: transform;
-}
-.dish-infos:hover {
-  transform: scaleX(0.8);
-  border-radius: 16px 0 0 16px;
-}
 .dish-infos:hover + .dish-validate {
+  transform: scale(1.2em);
   visibility: unset;
   border-radius: 0 16px 16px 0;
   display: flex;
@@ -518,16 +530,13 @@ body {
   background-color: #353535;
   color: #FFFFFF;
   padding-bottom: 10%;
-  /**/
-  /**/
-  /**/
-  /**/
 }
 .footer-logo {
   width: 28%;
   margin: 6% 0 2% 4%;
   color: wheat;
 }
+
 .footer-propose {
   margin: 2% 0 2% 0;
   display: flex;
@@ -536,6 +545,7 @@ body {
 .footer-propose-icon {
   margin: 0 3% 0 3%;
 }
+
 .footer-become-popular {
   display: flex;
   /**/
@@ -543,14 +553,15 @@ body {
 .footer-become-popular-icon {
   margin: 0 3% 0 3%;
 }
+
 .footer-legal {
   margin: 2% 0 2% 3%;
 }
+
 .footer-contact {
   margin: 2% 0 2% 3%;
 }
 
-/*  trop de niveaux*/
 .transition {
   height: 200px;
   width: 100%;

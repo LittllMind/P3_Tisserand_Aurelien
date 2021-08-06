@@ -52,6 +52,19 @@
 }
 
 .dish {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari et Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    cursor: pointer;
+    margin: 4%;
     /**/
     &-title {
         font: $ovink;
@@ -68,64 +81,64 @@
     &-price {
         font-weight: bold;
     }
+}
+
+.dish-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $background-primary;
+    border-radius: 16px;
+    padding: 4%;
+    width: 100%;
+    height: 100%;
     /**/
-    &-validate {
-        width: 0px;
-        height: 100%;
-        background-color: $dish-selection-validate;
-        visibility: hidden;
-        /**/
-        &-check {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $dish-selection-validate;
-            font-size: 1.5em;
-            font-weight: bold;
-            padding-right: 8px;
-            background-color: $background-primary;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            transition: transform 500ms ease-in-out;
-        }
+    transition-duration: 1000ms;
+    transform: scale(1);
+    &:hover {
+        transform: scale(1);
+        border-radius: 16px 0 0 16px;
     }
 }
 
-.dish {
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    cursor: pointer;
-    margin: 4%;
+.dish-validate {
+    width: 0px;
+    height: 100%;
+    background-color: $dish-selection-validate;
+    visibility: hidden;
+    /*transition-duration: 1000ms;
+    transform: scale(1);*/
+    transition-duration: 1000ms;
+    transform: rotate(0deg);
     /**/
-    &-infos {
+    &-check {
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        color: $dish-selection-validate;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-right: 8px;
         background-color: $background-primary;
-        border-radius: 16px;
-        padding: 4%;
-        width: 100%;
-        height: 100%;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        /**/
         transition-duration: 1000ms;
-        transition-property: transform;
-        &:hover {
-            transform: scaleX(0.8);
-            border-radius: 16px 0 0 16px;
-        }
-        &:hover+.dish-validate {
-            visibility: unset;
-            border-radius: 0 16px 16px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 25%;
-            &-check {
-                transform: rotate(-360deg);
-            }
-        }
+        transform: rotate(0deg);
+    }
+}
+
+.dish-infos:hover+.dish-validate {
+    transform: scale(1.2em);
+    visibility: unset;
+    border-radius: 0 16px 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    &-check {
+        transform: rotate(-360deg);
     }
 }
 

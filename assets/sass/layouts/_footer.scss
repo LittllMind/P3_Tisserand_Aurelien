@@ -7,35 +7,32 @@
         margin: 6% 0 2% 4%;
         color: wheat;
     }
+}
+
+.footer-propose {
+    margin: 2% 0 2% 0;
+    display: flex;
     /**/
-    &-propose {
-        margin: 2% 0 2% 0;
-        display: flex;
-        /**/
-        &-icon {
-            margin: 0 3% 0 3%;
-        }
-    }
-    /**/
-    &-become-popular {
-        display: flex;
-        /**/
-        &-icon {
-            margin: 0 3% 0 3%;
-        }
-    }
-    /**/
-    &-legal {
-        margin: 2% 0 2% 3%;
-    }
-    /**/
-    &-contact {
-        margin: 2% 0 2% 3%;
+    &-icon {
+        margin: 0 3% 0 3%;
     }
 }
 
+.footer-become-popular {
+    display: flex;
+    /**/
+    &-icon {
+        margin: 0 3% 0 3%;
+    }
+}
 
-/*  trop de niveaux*/
+.footer-legal {
+    margin: 2% 0 2% 3%;
+}
+
+.footer-contact {
+    margin: 2% 0 2% 3%;
+}
 
 .transition {
     height: 200px;
