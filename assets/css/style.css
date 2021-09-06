@@ -83,6 +83,78 @@ th {
 /*=============================== M I X I N S ==================================*/
 /* type de boutton ? (validation/recherche..etc)*/
 /* Et une fonction ?? */
+/* ------------------------- F A D E   I N -------------------- */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* sur Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ------------------------ F A D E   O U T ---------------------- */
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeout {
+  /* sur Firefox */
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeout {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeout {
+  /* sur Opera */
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @font-face {
   font-family: "Ovink";
   src: url("//db.onlinewebfonts.com/t/33f1a2305633401f3215aa8c82874cf7.eot");
@@ -197,13 +269,13 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: thin solid #B862DB;
   background-color: #B862DB;
   box-shadow: 0px 3px 5px rgba(0, 0, 1, 0.5);
   color: #FFFFFF;
   border-radius: 35px 35px 35px 35px;
   margin-bottom: 50px;
   margin-top: 25px;
+  background: linear-gradient(340deg, #B862DB, #e0b7f0);
 }
 
 /* =============== O P E R A T I O N ============== */
@@ -381,6 +453,9 @@ body {
   background-color: #F6F6F6;
   padding-bottom: 10%;
   /**/
+  /**/
+  /**/
+  /**/
 }
 .selection-title {
   margin-left: 6%;
@@ -399,7 +474,6 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: thin solid #B862DB;
   background-color: #B862DB;
   box-shadow: 0px 3px 5px rgba(0, 0, 1, 0.5);
   color: #FFFFFF;
@@ -409,6 +483,22 @@ body {
   margin-left: 25%;
   margin-bottom: 25%;
   text-align: center;
+}
+.selection-starter {
+  animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  /* Firefox */
+  -webkit-animation: fadein 4s;
+  /* Safari et Chrome */
+  -o-animation: fadein 4s;
+  /* Opera */
+  animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  /* Firefox */
+  -webkit-animation: fadein 4s;
+  /* Safari et Chrome */
+  -o-animation: fadein 4s;
+  /* Opera */
 }
 
 .selection-head {
@@ -431,13 +521,6 @@ body {
 }
 
 .dish {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  /* Firefox */
-  -webkit-animation: fadein 2s;
-  /* Safari et Chrome */
-  -o-animation: fadein 2s;
-  /* Opera */
   height: 90px;
   display: flex;
   justify-content: space-between;
@@ -485,8 +568,6 @@ body {
   height: 100%;
   background-color: #8EDEC9;
   visibility: hidden;
-  /*transition-duration: 1000ms;
-  transform: scale(1);*/
   transition-duration: 1000ms;
   transform: rotate(0deg);
   /**/
@@ -503,9 +584,6 @@ body {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  /**/
-  transition-duration: 1000ms;
-  transform: rotate(0deg);
 }
 
 .dish-infos:hover + .dish-validate {
@@ -517,11 +595,16 @@ body {
   align-items: center;
   width: 25%;
 }
-.dish-infos:hover + .dish-validate-check {
-  transform: rotate(-360deg);
+.dish-infos:hover + .dish-validate > .dish-validate-check {
+  transform: rotate(0deg);
 }
 
-/***************************************************************/
+.dish-validate-check {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
+}
+
+/******************************* T E S T S ********************************/
 .transition {
   padding-top: 1300px;
 }
@@ -568,5 +651,13 @@ body {
   background-color: #FFFFFF;
   border: thin solid #1818;
 }
+
+/* 
+animation complete sur dish 
+animation coeur
+Les trois petits points
+fade in
+flache retour menus
+*/
 
 /*# sourceMappingURL=style.css.map */

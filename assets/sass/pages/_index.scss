@@ -83,6 +83,7 @@ body {
         @include button;
         margin-bottom: 50px;
         margin-top: 25px;
+        background: linear-gradient(340deg, $buttons, #e0b7f0);
     }
 }
 
